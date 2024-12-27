@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Outsourced Part Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>Outsourced Part Detail</h1>
+
+<!-- Form for saving/updating the Outsourced Part -->
+<form th:action="@{/saveOutsourcedPart}" th:object="${outsourcedpart}" method="POST">
+
+    <div>
+        <input type="hidden" th:field="*{id}" />    <!-- Critical hidden ID field to make sure outsource updates when you click update-->
+    </div>
+
+    <!-- connects to partform.html -->
+    <div th:replace="partform :: PartForm"></div>
+
+    <!-- Added a Company Name Field to visually display and take input company name -->
+    <div>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" th:field="*{companyName}" placeholder="Company Name" class="form-control mb-4 col-4" required>
+    </div>
+
+    <button type="submit">Save Outsourced Part</button>
+</form>
+
+<!-- Link to Main Screen -->
+<a href="http://localhost:8080/">Link to Main Screen</a>
+
+</body>
+</html>
