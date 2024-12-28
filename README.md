@@ -1,4 +1,4 @@
-# FullStack CRUD ContactList
+# FullStack Inventory Management System
 
 ## Overview
 This project demonstrates inventory management by filtering for engine parts and car products. It includes indexing as well as search functionality for either parts or products. CRUD is used in the project to create, update, and delete engine parts and car products. The theme of the project focuses on car products which will be car models in this case, with engine parts corresponding to each product.
@@ -30,7 +30,7 @@ This project demonstrates inventory management by filtering for engine parts and
 
 ## Step 1: Clone the Repository
 ```bash
-git clone [//github.com/Nofate4you/Java_CRUDContactList.git](https://github.com/Nofate4you/Java-Frameworks2.0.git)
+git clone [//github.com/Nofate4you/Java_CRUDContactList.git](https://github.com/KevinLlano/Java-Frameworks2.0.git)
 ```
 
 ## Step 2: Backend Setup (Spring Boot)
@@ -54,7 +54,14 @@ The frontend is available at: [http://localhost:3000](http://localhost:3000)
 **Backend**: 
 
 **Frontend**: Provides a user-friendly interface to:
-- Add, view, update, and delete parts and products.
-
+- 
 
 ## Screenshots 
+![image](https://github.com/user-attachments/assets/00b4818e-7944-49bb-be82-842f1e2c79bd)
+![image](https://github.com/user-attachments/assets/2a9dc156-8de5-4b4c-bc4c-ba71b0bdd911)
+![image](https://github.com/user-attachments/assets/f2b30d03-d212-4ed5-bc04-d2a3773cac12)
+![image](https://github.com/user-attachments/assets/afb2d82b-06ba-4122-91db-b95c4dbf9d27)
+![image](https://github.com/user-attachments/assets/7fe222b4-7def-4f85-9a32-253017c99754)
+
+
+
