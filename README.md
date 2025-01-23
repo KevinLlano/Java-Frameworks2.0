@@ -39,6 +39,7 @@ Use Spring Initializr to generate the project with dependencies: Spring Web, Spr
 Download and unzip the project.
 
 **Database Configuration(Pick whichever database you want; I will use the H2 example here.)**
+
 In src/main/resources/application.properties, configure your database (for H2 example):
 properties
 Copy
@@ -66,6 +67,7 @@ The frontend is available at: [http://localhost:3000](http://localhost:3000)
 
 ## Step 4: Usage
 **Backend**: Insert outsourced parts and in-house parts; it will add and update the database.
+
 **Frontend**: Interact with the frontend to add, search, delete, update, and more dynamically.
 
 ## Screenshots 
