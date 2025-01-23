@@ -18,22 +18,24 @@ import SaveProductScreen from './pages/Savedproductscreen';
 
 
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([]); // State to store fetched data
 
+  // Fetch data from the backend when component mounts
   useEffect(() => {
-    fetch('http://localhost:8080/mainscreen')
-      .then((response) => response.json())
+    fetch('http://localhost:8080/mainscreen') 
+      .then((response) => response.json()) // Parse the response to JSON
       .then((data) => {
-        setData(data);
-        console.log(data);
+        setData(data); // Set the fetched data in state
+        console.log(data); 
       })
       .catch((error) => console.error('Error fetching data:', error)); // Handle fetch errors
-  }, []);
+  }, []); // Empty dependency array to run only once when component mounts
 
   return (
     <div className="App">
-      <Routes>
-      <Route path="/" element={<Mainscreen />} />
+      <Routes> 
+        {/* Define the routes for each page */}
+        <Route path="/" element={<Mainscreen />} />
         <Route path="/about" element={<About />} />
         <Route path="/confirmationaddpart" element={<ConfirmationAddPart />} />
         <Route path="/confirmationassocpart" element={<ConfirmationAssocPart />} />
@@ -45,13 +47,11 @@ function App() {
         <Route path="/mainscreen" element={<Mainscreen />} />
         <Route path="/showFormAddInPart" element={<InhousePartForm />} />
         <Route path="/errorBuyProduct" element={<ErrorBuyProduct />} />
-
         <Route path="/negativeerror" element={<NegativeError />} />
         <Route path="/showFormAddOutPart" element={<OutsourcedPartForm />} />
         <Route path="/partform" element={<PartForm />} />
         <Route path="/showFormAddProduct" element={<ProductForm />} />
         <Route path="/saveproductscreen" element={<SaveProductScreen />} />
-        {/* Add more routes here as needed */}
       </Routes>
     </div>
   );
