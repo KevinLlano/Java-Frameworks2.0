@@ -34,12 +34,8 @@ git clone [//github.com/Nofate4you/Java_CRUDContactList.git](https://github.com/
 ```
 
 ## Step 2: Backend Setup (Spring Boot)
-**Create Spring Boot Project:**
 
-Use Spring Initializr to generate the project with dependencies: Spring Web, Spring Data JPA, and your preferred database (e.g., H2 or MySQL).
-Download and unzip the project.
-
-**Database Configuration(Pick whichever database you want; I will use the H2 example here):**
+**Database Setup-Up/Configuration(Pick whichever database you want; I will use the H2 example here):**
 
 In src/main/resources/application.properties, configure your database (for H2 example):
 properties
@@ -69,7 +65,7 @@ The frontend is available at: [http://localhost:3000](http://localhost:3000)
 ## Step 4: Usage
 **Backend**: Insert outsourced parts and in-house parts; it will add and update the database.
 
-**Frontend**: Interact with the frontend to add, search, delete, update, and more dynamically.
+**Frontend**: Interact with the frontend to add, search, delete, and update with an interactive UI.
 
 ## SCREENSHOTS 
 
