@@ -26,15 +26,29 @@ This project demonstrates inventory management by filtering for engine parts and
 - **Maven** (or Gradle)
 - **Node.js & npm**
 
-# Installation
 
+# Installation
 ## Step 1: Clone the Repository
 ```bash
 git clone [//github.com/Nofate4you/Java_CRUDContactList.git](https://github.com/KevinLlano/Java-Frameworks2.0.git)
 ```
 
 ## Step 2: Backend Setup (Spring Boot)
+**Create Spring Boot Project:**
+Use Spring Initializr to generate the project with dependencies: Spring Web, Spring Data JPA, and your preferred database (e.g., H2 or MySQL).
+Download and unzip the project.
 
+**Database Configuration(Pick whichever database you want; I will use the H2 example here.)**
+In src/main/resources/application.properties, configure your database (for H2 example):
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
 
 ## Step 3: Frontend Setup (React)
 Navigate to the frontend folder:
@@ -51,10 +65,8 @@ npm start
 The frontend is available at: [http://localhost:3000](http://localhost:3000)
 
 ## Step 4: Usage
-**Backend**: 
-
-**Frontend**: Provides a user-friendly interface to:
-- 
+**Backend**: Insert outsourced parts and in-house parts; it will add and update the database.
+**Frontend**: Interact with the frontend to add, search, delete, update, and more dynamically.
 
 ## Screenshots 
 ![image](https://github.com/user-attachments/assets/00b4818e-7944-49bb-be82-842f1e2c79bd)
