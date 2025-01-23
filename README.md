@@ -39,7 +39,7 @@ git clone [//github.com/Nofate4you/Java_CRUDContactList.git](https://github.com/
 Use Spring Initializr to generate the project with dependencies: Spring Web, Spring Data JPA, and your preferred database (e.g., H2 or MySQL).
 Download and unzip the project.
 
-**Database Configuration(Pick whichever database you want; I will use the H2 example here.):**
+**Database Configuration(Pick whichever database you want; I will use the H2 example here):**
 
 In src/main/resources/application.properties, configure your database (for H2 example):
 properties
