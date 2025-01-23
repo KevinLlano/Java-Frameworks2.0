@@ -70,7 +70,7 @@ The frontend is available at: [http://localhost:3000](http://localhost:3000)
 
 **Frontend**: Interact with the frontend to add, search, delete, update, and more dynamically.
 
-## Screenshots 
+## SCREENSHOTS 
 ![image](https://github.com/user-attachments/assets/00b4818e-7944-49bb-be82-842f1e2c79bd)
 ![image](https://github.com/user-attachments/assets/2a9dc156-8de5-4b4c-bc4c-ba71b0bdd911)
 ![image](https://github.com/user-attachments/assets/f2b30d03-d212-4ed5-bc04-d2a3773cac12)
