@@ -36,6 +36,8 @@ public class MainScreenController {
         List<Part> partList = partService.listAll(partkeyword);
         List<Product> productList = productService.listAll(productkeyword);
 
+
+
         // Return a combined list of parts and products
         return List.of(partList, productList);
     }

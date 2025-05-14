@@ -39,8 +39,8 @@ public class OutsourcedPartServiceImpl implements OutsourcedPartService{
             thePart = result.get();
         }
         else {
-            // we didn't find the OutSourced id
-            //throw new RuntimeException("Did not find part id - " + theId);
+            // didn't find the OutSourced id
+            //throws new RuntimeException("Did not find part id - " + theId);
             return null;
         }
 
