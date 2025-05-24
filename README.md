@@ -26,35 +26,115 @@ This project demonstrates inventory management by filtering for engine parts and
 - **Maven** (or Gradle)
 - **Node.js & npm**
 
-# Installation
+Here’s your full **README.md** installation and deployment section formatted for copy-paste:
 
-## Step 1: Clone the Repository
+---
+
+## 🛠️ Installation
+
+### **Step 1: Clone the Repository**
+
 ```bash
-git clone [//github.com/Nofate4you/Java_CRUDContactList.git](https://github.com/KevinLlano/Java-Frameworks2.0.git)
+git clone https://github.com/KevinLlano/Java-Frameworks2.0.git
 ```
 
-## Step 2: Backend Setup (Spring Boot)
+---
 
+### **Step 2: Backend Setup (Spring Boot)**
 
-## Step 3: Frontend Setup (React)
-Navigate to the frontend folder:
-cd 
+1. Open the project in your preferred IDE (e.g., IntelliJ, Eclipse).
+2. Ensure Maven dependencies are downloaded.
+3. Run the application:
+
+```bash
+./mvnw spring-boot:run
 ```
-Install the dependencies:
+
+* The backend will start at: `http://localhost:8080`
+
+---
+
+### **Step 3: Frontend Setup (React)**
+
+1. Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+2. Install dependencies:
+
 ```bash
 npm install
 ```
-Start the React development server:
+
+3. Start the development server:
+
 ```bash
 npm start
 ```
-The frontend is available at: [http://localhost:3000](http://localhost:3000)
 
-## Step 4: Usage
-**Backend**: 
+* The frontend will be available at: `http://localhost:3000`
 
-**Frontend**: Provides a user-friendly interface to:
-- 
+---
+
+### **Step 4: Usage**
+
+#### **Backend**
+
+* Handles REST APIs for managing engine parts and car products (CRUD).
+
+#### **Frontend**
+
+* Provides UI to:
+
+  * View, add, update, and delete items.
+  * Filter/search parts and products.
+  * Use buttons for managing inventory.
+
+---
+
+## Step 5: Backend Deployment (AWS Elastic Beanstalk)
+
+### 1. Package the Spring Boot App
+
+```bash
+./mvnw clean package
+```
+
+* This creates a `.jar` file in the `target/` directory.
+
+### 2. Install AWS CLI & EB CLI
+
+[EB CLI install guide](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
+
+### 3. Initialize Beanstalk
+
+```bash
+eb init
+```
+
+* Select your region
+* Choose **Java** platform
+* Link to your AWS account
+
+### 4. Create Environment & Deploy
+
+```bash
+eb create my-env-name
+eb deploy
+```
+
+### 5. Access the Deployed App
+
+You’ll get a live URL like:
+
+```
+http://my-env-name.elasticbeanstalk.com
+```
+
+---
+
 
 ## Screenshots 
 ![image](https://github.com/user-attachments/assets/00b4818e-7944-49bb-be82-842f1e2c79bd)
